@@ -1,10 +1,12 @@
 # Backbone - Parby Warker Products 👓🕶
 
-`git clone && cd bb-pw-product`
+`git clone && cd bb-pw-products`
 
 Run Dev Server: `npm start`
 
 Navigate to: `http://localhost:3000`
+
+> Description: An `Express` server providing API routing for product `FETCH/PUT/DELETE` and serving an `Angular SPA UI` that displays a product list with Price Update and Delete functions
 
 ## Project Generation for Angular Universal 🌌
 
@@ -24,7 +26,7 @@ Navigate to: `http://localhost:3000`
 
 ## TODO
 
-[] Reconfigure table layout to allow for separation according to the UI example provided - try straight CSS or get rid of table schema and replace with `<div class="tbody"><div class="trow"></div></div>`
+[ ] Reconfigure table layout to allow for separation according to the UI example provided - try straight CSS or get rid of table schema and replace with `<div class="tbody"><div class="trow"></div></div>`
 
 ```css
 table {
