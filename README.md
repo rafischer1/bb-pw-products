@@ -24,6 +24,8 @@ Navigate to: `http://localhost:3000`
 
 > This data does not need to persist (no need for database). Add the appropriate UI for rendering these items as seen below. Please add the ability to edit prices within the UI, as well as UI for deleting an item - integrating with the API that you have created.
 
+- To move in to 'Data Persist' mode: remove comments from `delete()` function in `app.component.ts` file 🍭
+
 ## TODO
 
 [ ] Reconfigure table layout to allow for separation according to the UI example provided - try straight CSS or get rid of table schema and replace with `<div class="tbody"><div class="trow"></div></div>`
