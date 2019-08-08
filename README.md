@@ -4,6 +4,8 @@
 
 Run Dev Server: `npm start`
 
+Navigate to: `http://localhost:3000`
+
 ## Project Generation for Angular Universal 🌌
 
 `ng add @nguniversal/express-engine --clientProject bb-pw-products`
