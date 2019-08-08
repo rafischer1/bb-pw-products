@@ -1,0 +1,92 @@
+.productContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+table {
+  width: 95%;
+  font-family: sans-serif;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+img {
+  width: 35px;
+  border-radius: 50%;
+  padding: 3%;
+}
+
+thead {
+  border: none;
+}
+
+thead > tr > th {
+  color: rgb(132, 168, 166);
+}
+
+.tr_body {
+  margin: 1% 0;
+  padding: 5%;
+  border: 1px solid rgb(132, 168, 166);
+}
+
+.td_name {
+  text-align: left;
+  display: flex;
+  align-content: center;
+  border-right: 1px solid rgb(132, 168, 166);
+}
+
+.td_name > span {
+  margin-top: 3%;
+}
+
+button {
+  color: black;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(132, 168, 166);
+}
+
+#trash {
+  font-size: 1.8em;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 60px;
+  background-color: rgb(170, 109, 109);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
