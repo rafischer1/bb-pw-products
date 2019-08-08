@@ -10,6 +10,8 @@ Navigate to: `http://localhost:3000`
 
 `ng add @nguniversal/express-engine --clientProject bb-pw-products`
 
+`"start": "npm run build:ssr && npm run serve:ssr"`
+
 ## Challenge Guidlines
 
 [x] Fetch products
