@@ -1,0 +1,46 @@
+<div class="productContainer">
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Product</th>
+        <th scope="col">Price</th>
+        <th scope="col">Code</th>
+        <th scope="col">Created By</th>
+        <th scope="col">Last Modified</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="tr_body" *ngFor="let i of productList">
+        <td class="td_name">
+          <img
+            src="{{ getPhoto() }}"
+            alt="Glasses avatar photo"
+            class="avatar"
+          />
+          <span>Parby Warker {{ i.name }}</span>
+        </td>
+        <td *ngIf="!this.clicked">
+          <a (click)="togglePrice()">{{ formatPrice(i.price) }}</a>
+        </td>
+        <td *ngIf="this.clicked">
+          <input
+            #box
+            type="number"
+            value="{{ i.price }}"
+            (keyup.enter)="changePrice(i.id, box.value)"
+          />
+        </td>
+        <td>{{ i.code }}</td>
+        <td>{{ i.creator }}</td>
+        <td>{{ formatDate(i.last_modified) }}</td>
+        <td>
+          <button (click)="delete(i)" shadowColor="warn" class="tooltip">
+            <span id="trash">🗑</span>
+            <span class="tooltiptext">Delete</span>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
