@@ -38,6 +38,9 @@ export class AppComponent implements OnInit {
   };
 
   formatPrice(price: number) {
+    if (price.toString().length > 5) {
+      price.toString().trim();
+    }
     if (price.toString().length === 4) {
       return `$${price}0`;
     }

@@ -28,7 +28,7 @@ Navigate to: `http://localhost:3000`
 
 ## TODO
 
-[ ] Reconfigure table layout to allow for separation according to the UI example provided - try straight CSS or get rid of table schema and replace with `<div class="tbody"><div class="trow"></div></div>`
+[ ] Reconfigure table layout to allow for separation according to the UI example provided - try straight CSS or get rid of table schema and replace with `<div class="tbody"><div class="trow"></div></div>` - switch project to `Material UI`
 
 ```css
 table {
@@ -36,3 +36,7 @@ table {
   border-spacing: 0 1em;
 }
 ```
+
+[Material UI Angular](https://material.angular.io/guide/getting-started)
+
+[ ] Better handling around price input. (input pattern, slice/splice in formatPrice())
