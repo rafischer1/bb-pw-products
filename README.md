@@ -1,6 +1,6 @@
 # Backbone - Parby Warker Products 👓🕶
 
-`git clone && cd bb-pw-products`
+`git clone && cd bb-pw-products && npm install`
 
 Run Dev Server: `npm start`
 
